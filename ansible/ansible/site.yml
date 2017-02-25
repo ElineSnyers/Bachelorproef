@@ -1,0 +1,8 @@
+# site.yml
+---
+
+- hosts: srv002
+  roles:
+  - ansible-role-oracle-java-master
+  - ansible-role-hadoop-master
+  - ansible-role-apache-spark-master
