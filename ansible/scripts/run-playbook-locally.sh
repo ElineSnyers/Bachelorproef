@@ -137,7 +137,9 @@ install_ansible_centos() {
 install_ansible_ubuntu() {
   info "Ubuntu: installing Ansible from PPA"
   # Remark: on older Ubuntu versions, it's python-software-properties
-  apt-get -y install software-properties-common
+  apt-get update
+  apt-get -y install python-software-properties
+
   apt-add-repository -y ppa:ansible/ansible
   apt-get -y update
   apt-get -y install ansible
