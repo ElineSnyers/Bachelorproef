@@ -6,3 +6,6 @@
   - ansible-role-oracle-java-master
   - ansible-role-hadoop-master
   - ansible-role-apache-spark-master
+  vars: 
+    - hadoop_type_of_node: master
+    - hadoop_master: srv002
